@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOOOOOOOOOgabOOOOOOga</title>
+</head>
+
+<body>
+    <script>
+        function psycho(n) {
+            let num = Number(n)
+            console.log(`type: ${typeof num}, num % 1 != 0: ${num % 1 != 0}, num < 1: ${num < 1}`)
+            if (num % 1 != 0 || num < 1) return 'Integers Only, Brat'
+            let penis = num.toString()
+            switch (penis.length) {
+                case 1:
+                    return 1
+                    break
+                case 2:
+                    return [penis[0], 1].join('') / 1
+                    break
+                case 3:
+                    return [penis[0], penis[1] - penis[1] ? 1 : 0, 1].join('') / 1
+                default:
+                    let v = [penis[0], penis[1] - (penis[1] != 0 ? 1 : 0)]
+                    for (let i = 0; i < penis.length - 3; i++) v.push(9)
+                    v.push(1)
+                    return v.join('') / 1
+            }
+        }
+    </script>
+    <input type="number" onchange="value=psycho(value)"></input>
+</body>
+
+</html>
